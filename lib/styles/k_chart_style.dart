@@ -68,32 +68,32 @@ class KChartColors {
     ///
     this.ma5Color = const Color(0xFFFFC634),
     this.ma10Color = const Color(0xff35cdac),
-    this.upColor = const Color(0xFF14AD8F),
-    this.dnColor = const Color(0xFFD5405D),
+    this.upColor = const Color(0xFFD5405D),
+    this.dnColor = const Color(0xFF14AD8F),
     this.volColor = const Color(0xff2f8fd5),
-    this.volUpColor = const Color(0xFF14AD8F),
-    this.volDnColor = const Color(0xFFD5405D),
+    this.volUpColor = const Color(0xFFD5405D),
+    this.volDnColor = const Color(0xFF14AD8F),
     this.defaultTextColor = const Color(0xFF909196),
-    this.nowPriceUpColor = const Color(0xFF14AD8F),
-    this.nowPriceDnColor = const Color(0xFFD5405D),
+    this.nowPriceUpColor = const Color(0xFFD5405D),
+    this.nowPriceDnColor = const Color(0xFF14AD8F),
 
     /// trend color
     this.trendLineColor = const Color(0xFFF89215),
 
-    ///value border color after selection
+    /// value border color after selection
     this.selectBorderColor = const Color(0xFF222223),
 
-    ///background color when value selected
+    /// background color when value selected
     this.selectFillColor = const Color(0xffffffff),
 
-    ///color of grid
+    /// color of grid
     this.gridColor = const Color(0xFFD1D3DB),
 
-    ///color of annotation content
+    /// color of annotation content
     this.crossColor = const Color(0xFF191919),
     this.crossTextColor = const Color(0xFF222223),
 
-    ///The color of the maximum and minimum values in the current display
+    /// The color of the maximum and minimum values in the current display
     this.maxColor = const Color(0xFF222223),
     this.minColor = const Color(0xFF222223),
   });

@@ -105,8 +105,8 @@ class MACDStyle extends IndicatorStyle {
   final double macdWidth;
 
   const MACDStyle({
-    this.upColor = const Color(0xFF14AD8F),
-    this.dnColor = const Color(0xFFD5405D),
+    this.upColor = const Color(0xFFD5405D),
+    this.dnColor = const Color(0xFF14AD8F),
     this.macdColor = const Color(0xFFFFC634),
     this.difColor = const Color(0xff35cdac),
     this.deaColor = const Color(0xffb48ee3),
