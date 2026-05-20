@@ -59,14 +59,14 @@ class KChartWidget extends StatefulWidget {
     this.chartColors, {
     required this.detailBuilder,
     required this.isTrendLine,
-    this.xFrontPadding = 100,
+    this.xFrontPadding = 0,
     this.mainIndicators = const [],
     this.secondaryIndicators = const [],
     // this.onSecondaryTap,
     this.volHidden = false,
     this.isLine = false,
     this.isTapShowInfoDialog = false,
-    this.hideGrid = false,
+    this.hideGrid = true,
     this.showNowPrice = true,
     this.showInfoDialog = true,
     this.materialInfoDialog = true,
@@ -88,7 +88,7 @@ class KChartWidget extends StatefulWidget {
 
 class _KChartWidgetState extends State<KChartWidget> with TickerProviderStateMixin {
   final StreamController<InfoWindowEntity?> mInfoWindowStream = StreamController<InfoWindowEntity?>();
-  double mScaleX = 1.0, mScrollX = 0.0, mSelectX = 0.0;
+  double mScaleX = 0.5, mScrollX = 0.0, mSelectX = 0.0;
   AnimationController? _controller;
   Animation<double>? aniX;
 
@@ -104,7 +104,7 @@ class _KChartWidgetState extends State<KChartWidget> with TickerProviderStateMix
     return mScaleX;
   }
 
-  double _lastScale = 1.0;
+  double _lastScale = 0.5;
   bool isScale = false, isDrag = false, isLongPress = false, isOnTap = false;
 
   @override
@@ -129,7 +129,7 @@ class _KChartWidgetState extends State<KChartWidget> with TickerProviderStateMix
   Widget build(BuildContext context) {
     if (widget.datas != null && widget.datas!.isEmpty) {
       mScrollX = mSelectX = 0.0;
-      mScaleX = 1.0;
+      mScaleX = 0.5;
     }
     final BaseDimension baseDimension = BaseDimension(
       mBaseHeight: widget.mBaseHeight,

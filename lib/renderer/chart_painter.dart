@@ -454,45 +454,45 @@ class ChartPainter extends BaseChartPainter {
       nowPriceLinePaint,
     );
 
-    //repaint the background and text
-    TextPainter tp = getTextPainter(
-      NumberUtil.formatFixed(value, fixedLength) ?? '',
-      priceColor,
-    );
-
-    double paddingX = 3, paddingY = 1.5;
-    double space = 5.0;
-    double offsetX;
-    switch (verticalTextAlignment) {
-      case VerticalTextAlignment.left:
-        // offsetX = paddingX;
-        offsetX = space;
-        break;
-      case VerticalTextAlignment.right:
-        offsetX = mWidth - tp.width - paddingX * 2 - space;
-        break;
-    }
-
-    double top = y - tp.height / 2;
-    RRect rect = RRect.fromLTRBR(
-      offsetX,
-      top - paddingY,
-      offsetX + tp.width + paddingX * 2,
-      top + tp.height + paddingY * 2,
-      Radius.circular(2.0),
-    );
-    canvas.drawRRect(
-      rect,
-      nowPriceSelectorPaint,
-    );
-    canvas.drawRRect(
-      rect,
-      nowPriceSelectorBorderPaint,
-    );
-    tp.paint(
-      canvas,
-      Offset(offsetX + paddingX, top),
-    );
+    // //repaint the background and text
+    // TextPainter tp = getTextPainter(
+    //   NumberUtil.formatFixed(value, fixedLength) ?? '',
+    //   priceColor,
+    // );
+    //
+    // double paddingX = 3, paddingY = 1.5;
+    // double space = 5.0;
+    // double offsetX;
+    // switch (verticalTextAlignment) {
+    //   case VerticalTextAlignment.left:
+    //     // offsetX = paddingX;
+    //     offsetX = space;
+    //     break;
+    //   case VerticalTextAlignment.right:
+    //     offsetX = mWidth - tp.width - paddingX * 2 - space;
+    //     break;
+    // }
+    //
+    // double top = y - tp.height / 2;
+    // RRect rect = RRect.fromLTRBR(
+    //   offsetX,
+    //   top - paddingY,
+    //   offsetX + tp.width + paddingX * 2,
+    //   top + tp.height + paddingY * 2,
+    //   Radius.circular(2.0),
+    // );
+    // canvas.drawRRect(
+    //   rect,
+    //   nowPriceSelectorPaint,
+    // );
+    // canvas.drawRRect(
+    //   rect,
+    //   nowPriceSelectorBorderPaint,
+    // );
+    // tp.paint(
+    //   canvas,
+    //   Offset(offsetX + paddingX, top),
+    // );
   }
 
   //For TrendLine
