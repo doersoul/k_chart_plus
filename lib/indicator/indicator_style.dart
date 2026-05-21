@@ -14,11 +14,11 @@ class MAStyle extends IndicatorStyle {
   final List<Color> maColors;
   const MAStyle({
     this.maColors = const [
+      Color(0xFFFF0000),
       Color(0xFFFFC634),
-      Color(0xff35cdac),
       Color(0xffb48ee3),
-      Color(0xffE11D74),
-      Color(0xFFF7931A),
+      Color(0xFF127ECC),
+      Color(0xFF000000),
       Color(0xFF127ECC),
     ],
   });

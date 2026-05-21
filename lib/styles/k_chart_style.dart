@@ -66,8 +66,8 @@ class KChartColors {
     ],
 
     ///
-    this.ma5Color = const Color(0xFFFFC634),
-    this.ma10Color = const Color(0xff35cdac),
+    this.ma5Color = const Color(0xFFFF0000),
+    this.ma10Color = const Color(0xFF000000),
     this.upColor = const Color(0xFFD5405D),
     this.dnColor = const Color(0xFF14AD8F),
     this.volColor = const Color(0xff2f8fd5),
@@ -108,6 +108,8 @@ class KChartStyle {
 
   final double space = 0.0;
 
+  final double indicatorTopMargin = 8.0;
+
   ///point-to-point distance
   final double pointWidth = 11.0;
 
@@ -135,5 +137,5 @@ class KChartStyle {
   ///customize the time below
   final List<String>? dateTimeFormat;
 
-  const KChartStyle([this.dateTimeFormat]);
+  const KChartStyle({this.dateTimeFormat});
 }
